@@ -1,0 +1,777 @@
+.event-list-page-nav {
+
+	padding: 5px 0;
+
+	.search-form {
+
+		display: none;
+		position: relative;
+		top: 0;
+		font-size: 14px;
+		line-height: 17px;
+
+		input {
+
+			height: 31px;
+			padding-left: 15px;
+
+			&::placeholder {
+
+				font-size: 14px;
+				line-height: 17px;
+				color: #b5b5b5;
+			}
+
+		}
+	}
+
+	.displayBlock {
+
+		display: inline-block !important;
+		position: relative;
+	}
+
+	i {
+
+		color: $lightgreen;
+		font-size: 25px;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+
+	.hamburger-btn {
+
+		vertical-align: middle;
+		margin-right: 15px;
+	}
+
+	.hamburger-btn {
+
+		background: 0 0;
+		border: 0;
+		width: 30px;
+		height: 30px;
+		position: relative;
+		-webkit-appearance: button;
+		padding: 0;
+
+		.hamburger-icon {
+
+			position: relative;
+			width: 30px;
+			height: 2px;
+			background: $gray;
+			display: block;
+
+			&::before,
+			&::after {
+
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				height: 2px;
+				width: 30px;
+				margin: auto;
+				background: $gray;
+			}
+
+			&::before {
+
+				top: -6px;
+
+			}
+
+			&::after {
+
+				bottom: -6px;
+
+			}
+
+		}
+
+	}
+
+}
+
+.ecp-event-info {
+
+	h3 {
+
+		font-size: 25px;
+		margin-bottom: 20px;
+		font-weight: bold;
+	}
+
+}
+
+.widget_ecp_widget {
+
+	background-color: #F4F4F4;
+	padding: 15px;
+
+	h2 {
+
+		font-weight: bold;
+		font-size: 23px;
+		line-height: 28px;
+		text-transform: uppercase;
+	}
+
+	.ecp-calendar-filter {
+
+		margin-top: 25px;
+		position: relative;
+
+		input[ type="search" ] {
+
+			border: 1px solid #b5b5b5;
+			width: 100%;
+			display: inline-block;
+			font-size: 14px;
+			line-height: 17px;
+			padding: 10px 30px 10px 20px;
+
+			&::placeholder {
+				font-size: 14px;
+				line-height: 17px;
+				color: #b5b5b5;
+			}
+
+		}
+
+		.form-check {
+
+			font-size: 12px;
+			line-height: 15px;
+			display: inline;
+			vertical-align: text-top;
+
+			input[type=checkbox] {
+
+				&::not(old) {
+
+					opacity: 0;
+					/* match the dimentsions of the custom label */
+					width: 20px;
+					height: 20px;
+					padding: 0;
+					margin: 0;
+				}
+
+				&:checked + label {
+
+					&::after {
+						content: "\2713";
+						font-size: 21px;
+					}
+				}
+			}
+
+			label {
+
+				position: relative;
+
+				&::after {
+
+					content: "";
+					position: absolute;
+					/*cover the default input */
+					top: -5px;
+					left: -20px;
+					width: 20px;
+					height: 20px;
+					border-radius: 3px;
+					background-color: #fff;
+					border: 1px solid #b5b5b5;
+					transform: rotate(0);
+					pointer-events: none;
+					text-align: center;
+					color: $lightgreen; /* easier to see in demo */
+				}
+			}
+
+		}
+
+		.fa-search {
+
+			position: absolute;
+			right: 9px;
+			top: 7px;
+			color: $lightgreen;
+			font-size: 25px;
+		}
+	}
+
+	.ecp-calendar-buttons {
+
+		display: flex;
+
+		.event-btn {
+
+			border: 1px solid $lightgreen;
+			text-align: center;
+			font-weight: bold;
+			font-size: 9px;
+			line-height: 11px;
+			letter-spacing: 1.35px;
+			color: $skyblue;
+			text-transform: uppercase;
+			border-radius: 0;
+			background-color: #fff;
+			width: 50%;
+
+			&:last-child {
+
+				margin-left: 15px;
+			}
+
+		}
+	}
+
+	.event-summer-wrapper {
+
+		display: flex;
+		margin-bottom: 15px;
+
+		.event-date {
+
+			background-color: #fff;
+
+			.month {
+				background-color: $lightgreen;
+				text-align: center;
+				font-weight: bold;
+				font-size: 20px;
+				line-height: 24px;
+				letter-spacing: 1.6px;
+				color: #FFFFFF;
+				text-transform: uppercase;
+				padding: 1px 10px;
+			}
+
+			.date {
+				text-align: center;
+				font-weight: bold;;
+				font-size: 30px;
+				line-height: 36px;
+				color: #4C85C4;
+			}
+
+			.day {
+				text-align: center;
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 17px;
+				letter-spacing: 1.12px;
+				color: #b5b5b5;
+				text-transform: uppercase;
+			}
+
+		}
+
+		.event-title {
+
+			margin-left: 15px;
+
+			h6 {
+
+				a {
+
+					font-weight: bold;
+					font-size: 14px;
+					line-height: 18px;
+					color: #000;
+
+					&:hover {
+						color: $primary;
+					}
+				}
+
+			}
+
+			.full-date {
+
+				font-size: 12px;
+				line-height: 14px;
+				letter-spacing: 0.6px;
+				color: $skyblue;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.ecp-calendar {
+
+		margin-top: 15px;
+		max-height: 260px !important;
+
+		.fc-toolbar {
+
+			.fc-header-toolbar {
+
+				margin-bottom: 0;
+			}
+		}
+
+		.fc-basic-view {
+
+			.fc-body {
+
+				.fc-row {
+
+					max-height: 35px;
+				}
+			}
+		}
+
+		.fc-button {
+
+			border: none;
+			padding: 0;
+			background: transparent;
+			box-shadow: none;
+			position: relative;
+
+			&:focus {
+				outline: none;
+			}
+
+			&::after,
+			&::before {
+
+				font-weight: bold;
+				font-size: 14px;
+				text-transform: uppercase;
+			}
+
+			&.fc-prev-button::after {
+				font-style: italic;
+			}
+
+			&.fc-next-button::before {
+				font-style: italic;
+			}
+
+		}
+
+		.fc-center h2 {
+
+			font-size: 21px;
+			text-transform: uppercase;
+			color: #000 !important;
+			border-bottom: 0 !important;
+			margin-top: 13px;
+		}
+
+		table tr,
+		table td,
+		table th {
+			border: none;
+		}
+
+		table td {
+			text-align: center;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 30px;
+			transition: 0.3s;
+		}
+
+		table .fc-head {
+			display: none;
+		}
+
+		.fc-basic-view .fc-body .fc-row {
+			min-height: auto;
+		}
+
+		.fc-scroller {
+			overflow: inherit !important;
+			height: auto !important;
+		}
+
+		table td.fc-today {
+			border: none !important;
+			background: $skyblue !important;
+			color: #fff;
+			display: block;
+		}
+
+		table .fc-day-number {
+			float: none !important;
+		}
+
+		.fc-icon-left-single-arrow:after {
+			content: "\2039";
+			font-weight: 700;
+			font-size: 30px;
+			top: -1%;
+			color: $lightgreen;
+		}
+
+		.fc-icon-right-single-arrow:after {
+			content: "\203A";
+			font-weight: 700;
+			font-size: 30px;
+			top: -1%;
+			color: $lightgreen;
+		}
+
+		.fc-day-top:hover {
+			background: $darkblue !important;
+			color: #fff !important;
+		}
+
+	}
+}
+
+
+.header-calendar-search-wrapper {
+
+	background-color: #e8e8e8;
+	margin-bottom: 25px;
+	position: relative;
+
+	.hide-greater-to-col {
+
+		display: none;
+
+	}
+
+
+	h2 {
+
+		margin-top: 12px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 44px;
+		text-transform: capitalize;
+	}
+
+	.input-icon {
+
+		position: relative;
+
+		i {
+
+			position: absolute;
+			top: 8px;
+			right: 25px;
+			color: $lightgreen;
+		}
+	}
+
+	select {
+
+		font-size: 14px;
+		line-height: 17px;
+		border-radius: 0;
+		border: 1px solid #b5b5b5;
+		height: 35px !important;
+
+		&:focus, &:active {
+
+			box-shadow: none;
+		}
+	}
+
+	input {
+
+		font-size: 14px;
+		line-height: 17px;
+		border-radius: 0;
+		border: 1px solid #b5b5b5;
+		height: 35px !important;
+		&:focus, &:active {
+
+			box-shadow: none;
+		}
+
+		&::placeholder {
+
+			font-size: 14px;
+			line-height: 17px;;
+			color: #b5b5b5;
+		}
+
+	}
+
+	input[ type="submit" ] {
+
+		text-align: center;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 1.8px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		border-radius: 0;
+		border: 1px solid #b5b5b5;
+	}
+
+	input[ type="search" ] {
+
+		border: 0;
+	}
+
+	.form-check {
+
+		font-size: 12px;
+		line-height: 15px;
+		display: inline-block;
+		vertical-align: sub;
+
+		input[type=checkbox] {
+
+			margin-top: -10px;
+
+			&::not(old) {
+
+				opacity: 0;
+				/* match the dimentsions of the custom label */
+				width: 20px;
+				height: 20px;
+				padding: 0;
+				margin: 0;
+			}
+
+			&:checked + label {
+
+				&::after {
+					content: "\2713";
+					font-size: 21px;
+				}
+			}
+		}
+
+		label {
+
+			position: relative;
+
+			&::after {
+
+				content: "";
+				position: absolute;
+				/*cover the default input */
+				top: -3px;
+				left: -24px;
+				width: 20px;
+				height: 20px;
+				border-radius: 3px;
+				background-color: #fff;
+				border: 1px solid #b5b5b5;
+				transform: rotate(0);
+				pointer-events: none;
+				text-align: center;
+				color: $lightgreen; /* easier to see in demo */
+			}
+		}
+
+	}
+
+	.calendar-search-btn-wrapper {
+
+		display: flex;
+		align-items: baseline;
+
+
+		.calendar-btn-group {
+
+			display: flex;
+
+
+			a {
+
+				text-align: center;
+				display: inline-block;
+				font-size: 12px;
+				line-height: 15px;
+				letter-spacing: 1.8px;
+				color: $skyblue;
+				text-transform: uppercase;
+				border: 1px solid $lightgreen;
+				background-color: #fff;
+				font-weight: bold;
+
+				&:first-child {
+
+					margin-right: 30px;
+					padding: 10px 17px;
+
+				}
+
+				&:last-child {
+
+					padding: 10px 35px;
+
+				}
+
+				&:hover {
+					color: $secondary;
+				}
+			}
+		}
+	}
+}
+
+.event-content-section {
+
+	h2, h3 {
+
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 28px;
+		letter-spacing: 1.6px;
+		text-transform: uppercase;
+	}
+
+	h3 {
+		
+		line-height: 30px;
+	}
+
+	p {
+
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	.common-btn {
+
+		padding: 10px 28px;
+	}
+
+	.sponsored {
+
+		text-align: center;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 1.12px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		padding: 5px 12px;
+		background-color: #000;
+		width: 123px;
+		margin-bottom: 23px;
+	}
+
+	.event-category {
+
+		margin-bottom: 23px;
+
+		a {
+
+			text-align: center;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 17px;
+			letter-spacing: 1.12px;
+			color: #FFFFFF;
+			text-transform: uppercase;
+			padding: 5px 12px;
+			background-color: #000;
+
+			&:hover {
+				color: $primary;
+			}
+		}
+
+	}
+
+	.event-title {
+
+		h2 {
+
+			font-weight: bold;
+			font-size: 32px;
+			line-height: 42px;
+			margin-bottom: 13px;
+
+		}
+	}
+
+	.event-meta {
+
+		margin-bottom: 21px;
+
+		p {
+
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 30px;
+			letter-spacing: 0.9px;
+			color: $skyblue;
+			text-transform: uppercase;
+			margin-bottom: 0;
+
+		}
+	}
+
+	.event-content {
+
+		padding-bottom: 25px;
+		padding-top: 19px;
+
+		p {
+
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+
+	.event-location {
+
+		padding-bottom: 25px;
+		padding-top: 19px;
+		border-top: 1px solid #e8e8e8;
+		border-bottom: 1px solid #e8e8e8;
+	}
+
+
+	.event-thumb {
+
+		.thumb-caption {
+
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 15px;
+			letter-spacing: 1.8px;
+			padding: 10px 0;
+		}
+	}
+
+	.event-cost, .event-addition-information {
+
+		border-bottom: 1px solid #e8e8e8;
+		padding-bottom: 25px;
+		padding-top: 19px;
+	}
+
+	.event-description {
+
+		padding-bottom: 25px;
+		padding-top: 19px;
+	}
+
+	.event-featured-description {
+
+		background-color: #e8e8e8;
+		padding: 34px 18px;
+		margin-bottom: 34px;
+	}
+
+}
+
+.events-list-page {
+
+	.calendar-2 {
+
+		display: none;
+
+	}
+
+}

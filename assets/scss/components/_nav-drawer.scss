@@ -1,0 +1,177 @@
+.nav-drawer {
+
+	height: 100%;
+	width: 427px;
+	max-width: 100%;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: -100%;
+	background: #fff;
+	color: #000;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding: 28px 68px 28px 74px;
+	overflow-y: auto;
+	margin-top: 32px;
+	box-shadow: 0px 3px 6px #00000029;
+
+	&.open {
+		left: 0;
+	}
+
+	.nav-drawer-inner {
+
+		position: relative;
+
+		ul {
+
+			li {
+
+				display: block;
+			}
+
+		}
+
+		#header-bottom-menu-container {
+
+			margin-bottom: 66px;
+
+			ul {
+
+				li {
+
+					margin-bottom: 12px;;
+				}
+			}
+		}
+
+		#header-top-menu-container {
+
+			margin-bottom: 27px;
+
+			ul {
+
+				li {
+
+					margin-bottom: 9px;
+				}
+			}
+		}
+
+		.footer-socials {
+
+			margin-bottom: 27px;
+
+			&:last-child {
+
+				a {
+
+					margin-right: 0;
+				}
+			}
+
+			a {
+
+				margin-right: 30px;
+
+
+				i {
+
+					color: $skyblue;
+					font-size: 25px;
+				}
+			}
+		}
+
+		.footer-search-form {
+
+			width: 194px;
+			max-width: 100%;
+			position: relative;
+
+			form {
+
+				input {
+
+					height: 28px;
+					border-radius: 0;
+					padding-right: 30px;
+					font-size: 12px;
+					line-height: 15px;
+					color: #b5b5b5
+
+					&::placeholder {
+
+						font-size: 12px;
+						line-height: 15px;
+						color: #b5b5b5;
+						opacity: 0.5;
+					}
+
+				}
+
+				i {
+					position: absolute;
+					right: 6px;
+					top: 3px;
+					font-size: 21px;
+					color: $lightgreen;
+				}
+			}
+
+		}
+
+		.drawer-logo {
+			margin-bottom: 19px;
+			img {
+				max-width: 220px;
+			}
+		}
+
+		.nav-drawer-header {
+
+			text-align: right;
+		}
+	}
+}
+
+.nav-drawer-close {
+
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0;
+	border: none;
+	background: 0 0;
+	cursor: pointer;
+
+	&::before,
+	&::after {
+		content: '';
+		width: 100%;
+		height: 2px;
+		background-color: $gray;
+		transform-origin: center;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin-top: -2px;
+	}
+
+	&::before {
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		transform: rotate(-45deg);
+	}
+
+	&:hover,
+	&:focus {
+		outline: 0;
+		border: 0;
+	}
+}

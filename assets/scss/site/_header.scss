@@ -1,0 +1,311 @@
+.header {
+	background: #fff;
+	box-shadow: 0 3px 6px #00000029;
+	padding: 15px;
+	transition: 0.4s;
+
+	&.sticky-directory-page {
+
+		padding: 5px;
+
+		.sticky-directory-contents {
+
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	.hamburger-btn {
+		cursor: pointer;
+		outline: none;
+		background: 0 0;
+		border: 0;
+		width: 30px;
+		height: 30px;
+		position: relative;
+		-webkit-appearance: button;
+		padding: 0;
+
+		&:focus {
+			outline: none;
+		}
+		&:hover .hamburger-icon {
+			background: $black;
+		}
+		.hamburger-icon {
+
+			position: relative;
+			width: 30px;
+			height: 2px;
+			background: $gray;
+			display: block;
+
+			&::before,
+			&::after {
+
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				height: 2px;
+				width: 30px;
+				margin: auto;
+				background: $gray;
+			}
+
+			&::before {
+				top: -6px;
+			}
+
+			&::after {
+				bottom: -6px;
+			}
+		}
+	}
+
+	.menu-inner {
+		.hamburger-btn {
+			display: none;
+			@media (max-width: 991px) {
+				display: inline-block!important;
+				margin-right: 9px;
+				transform: translateY(11px);
+			}
+		}
+	}
+
+	.sticky-nav {
+		max-height: 0;
+		overflow: hidden;
+		.site-logo {
+			max-height: 33px;
+			margin-right: 15px;
+		}
+	}
+
+	&.sticky-header {
+
+		padding: 7px 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 9999;
+		display: block;
+		box-shadow: 0 3px 6px $shadwo;
+		-webkit-transition: top 0.99s;
+		transition: top 0.99s;
+		opacity: 1;
+
+		.sticky-nav {
+
+			max-height: 200px;
+			transition: 1s;
+
+			.search-form {
+
+				display: none;
+				position: relative;
+				top: 0;
+				font-size: 14px;
+				line-height: 17px;
+
+				input {
+
+					height: 31px;
+					padding-left: 15px;
+
+					&::placeholder {
+
+						font-size: 14px;
+						line-height: 17px;
+						color: #b5b5b5;
+					}
+
+				}
+			}
+
+			.displayBlock {
+
+				display: inline-block !important;
+				position: relative;
+			}
+
+			i {
+
+				color: $lightgreen;
+				font-size: 25px;
+				vertical-align: middle;
+				cursor: pointer;
+			}
+
+			.hamburger-btn {
+
+				vertical-align: middle;
+				margin-right: 15px;
+			}
+
+		}
+
+		.without-mobile {
+
+			* {
+
+				display: none;
+			}
+		}
+
+	}
+
+	.on-mobile {
+		@media (min-width: 577px) {
+			display: none;
+		}
+		.site-logo {
+			max-height: 40px;
+		}
+	}
+
+
+	.without-mobile {
+
+		.header-logo {
+			float: left;
+			margin-right: 15px;
+			img {
+				max-height: 80px;
+				@media (max-width: 991px) {
+					max-height: 50px;
+				}
+			}
+		}
+
+		.header-search, .sticky-header-search {
+
+			display: flex;
+			align-items: center;
+
+			i {
+				font-size: 25px;
+				color: $lightgreen;
+				cursor: pointer;
+				transition: 0.4s;
+
+				&:hover {
+					color: $primary;
+				}
+			}
+
+			form {
+
+				line-height: 0;
+				padding: 0;
+				margin: 0;
+				display: none;
+
+				input {
+
+					margin-left: 15px;
+					padding: 0 10px;
+					width: 100%;
+					font-size: 12px;
+					height: 25px;
+
+					&:placeholder {
+
+						font-size: 12px;
+						line-height: 15px;
+						color: #b5b5b5;
+						opacity: 0.5;
+					}
+				}
+			}
+		}
+
+		.sticky_logo, .hamburger-btn, .sticky-header-search {
+
+			display: none;
+		}
+
+		&.sticky-directory-page {
+
+			display: flex;
+			align-items: center;
+			padding: 10px 0;
+			box-shadow: 0px 3px 6px #00000029;
+
+			.sticky_logo, .hamburger-btn, .sticky-header-search {
+
+				display: block;
+			}
+
+			.sticky-directory-contents {
+
+				display: flex;
+				align-items: center;
+
+			}
+
+			.sticky_logo {
+
+				margin-left: 21px;
+				margin-right: 10px;
+			}
+
+			.sticky-header-search {
+
+				margin-bottom: 0 !important;
+				display: flex;
+			}
+
+		}
+
+		&.sticky-event-page {
+
+			display: flex;
+			align-items: center;
+			padding: 10px 0;
+			box-shadow: 0px 3px 6px #00000029;
+
+			.sticky_logo, .hamburger-btn, .sticky-header-search {
+
+				display: block;
+			}
+
+			.sticky-event-contents {
+
+				display: flex;
+				align-items: center;
+
+			}
+
+			.sticky_logo {
+
+				margin-left: 21px;
+				margin-right: 10px;
+			}
+
+			.sticky-header-search {
+
+				margin-bottom: 0 !important;
+				display: flex;
+			}
+
+		}
+
+
+	}
+
+}
+
+.admin-bar {
+	@media (min-width: 782px) {
+		.header.sticky-header {
+			top: 32px;
+		}
+	}
+	@media (min-width: 600px) and (max-width: 781px) {
+		.header.sticky-header {
+			top: 46px;
+		}
+	}
+}

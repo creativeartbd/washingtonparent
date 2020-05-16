@@ -1,0 +1,488 @@
+/* Small devices (landscape phones, 576px and down ) */
+@media screen and (max-width: 576px) {
+
+	.header-calendar-search-wrapper {
+
+		padding-top: 25px;
+
+		h2 {
+
+			display: none;
+
+		}
+
+	}
+
+	.event-content-section {
+
+		.event-title {
+
+			h2 {
+
+				font-size: 28px;
+				line-height: 32px;
+
+			}
+
+		}
+
+		.social-share {
+
+			display: block;
+
+			p {
+
+				margin-bottom: 0;
+
+			}
+
+		}
+
+		.event-location, .event-cost {
+
+			.common-btn {
+
+				float: left;
+
+			}
+
+		}
+
+	}
+
+	.events-list-page {
+
+		.sidebar-newsletter-wrapper {
+
+			display: none;
+		}
+
+		.calendar-2 {
+
+			display: block;
+
+		}
+
+	}
+
+	.pagination {
+
+		float: left !important;
+
+	}
+
+
+	.hide-greater-to-col {
+
+		display: block !important;
+
+	}
+
+	.hide-less-to-col {
+
+		display: none;
+	}
+
+	.single-post-page {
+
+		.widget_ecp_widget {
+
+			display: none;
+
+		}
+
+	}
+
+	.directory-container {
+
+		.common-btn {
+
+			background-color: $lightgreen;
+			color: #fff;
+		}
+
+	}
+
+	.hls-load-more {
+
+		display: none;
+	}
+
+	.hls-mobile-ad {
+
+		display: block !important;
+	}
+
+	.sticky-header {
+
+		.sticky-nav {
+			//max-height: 0;
+			//overflow: hidden;
+
+			display: none !important;
+		}
+
+
+	}
+
+
+	.section-title {
+
+		h2 {
+
+			font-size: 32px;
+			line-height: 30px;
+		}
+	}
+
+
+	article {
+
+		img {
+
+			width: 100%;
+		}
+
+			// Home page top post
+		&.home-top-post {				 
+
+			.entry-header {
+
+				padding: 15px; 
+
+				.post-category {
+
+					margin-bottom: 0;
+
+					a {
+
+
+					}
+
+				}
+
+				.entry-title {
+
+					a {
+
+						font-size: 20px;
+						line-height: 24px;
+						
+					}
+
+				}
+
+			}
+
+		}
+
+		&.home-editors-pick-post, &.home-latest-stories {
+
+			&.on-mobile {
+
+				.entry-header {
+
+					.post-category {
+
+						margin-top: 15px;
+						margin-bottom: 6px;
+					}
+
+					.entry-title {
+
+						a {
+
+							font-size: 16px;
+							line-height: 19px !important;
+							font-weight: bold;
+
+						}
+
+					}
+
+				}
+
+				.entry-content, .entry-meta {
+
+					display: none;
+				}
+
+			}
+
+		}
+
+		&.home-latest-stories {
+
+			&.on-mobile {
+
+				.entry-header {
+
+					.post-category {
+
+						margin-top: 0;
+						margin-bottom: 6px;
+					}
+
+				}
+
+			}
+
+		}
+
+		&.single-post {
+
+			.entry-footer {
+
+				.post-authors-wrapper {
+
+					.post-author {
+
+						.author-meta {
+
+							h2 {
+
+								margin-bottom: 0;
+
+								a {
+
+									line-height: 18px;
+								}
+
+							}
+
+							p {
+
+								font-size: 12px;
+								line-height: 18px;
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+		&.event-listing {
+
+
+			.common-btn {
+
+				padding: 5px 20px;
+
+			}
+
+			.wp-event-item {
+
+				.wp-event-content {
+
+					.wp-event-title {
+
+						a {
+
+							font-size: 14px;
+							line-height: 17px;
+
+						}
+
+					}
+
+					.wp-event-category {
+
+						margin-bottom: 0;
+
+					}
+
+					.wp-event-date {
+
+						span {
+
+							font-size: 10px;
+							line-height: 12px;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.nav-drawer {
+
+		padding: 25px !important;
+	}
+
+	.on-mobile {
+
+
+		.search-form {
+
+			display: none;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			font-size: 14px;
+			line-height: 17px;
+
+			input {
+
+				width: 100%;
+				height: 35px;
+				padding-left: 15px;
+
+				&::placeholder {
+
+					font-size: 14px;
+					line-height: 17px;
+					color: #b5b5b5;
+				}
+
+			}
+		}
+
+		i {
+			color: $lightgreen;
+			font-size: 25px;
+			vertical-align: middle;
+			cursor: pointer;
+			transform: translateY(3px);
+		}
+
+		.hamburger-btn {
+			transform: translateY(4px);
+			vertical-align: middle;
+		}
+	}
+
+	.without-mobile {
+
+		display: none;
+	}
+
+	.footer-area {
+
+		.menu-container {
+
+			margin-bottom: 43px;
+
+			ul {
+
+				margin: 0;
+				padding: 0;
+
+				li {
+
+					display: block;
+					margin-bottom: 15px;
+
+					a {
+
+						margin-right: 0;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+/* Custom width */
+@media screen and (max-width: 600px) {
+
+	.nav-drawer {
+
+		margin-top: 0;
+	}
+
+}
+
+/* Medium devices (tablets, 767px and down ) */
+@media screen and (max-width: 768px) {
+	
+
+}
+
+/* Large devices (desktops, 992px and down ) */
+@media screen and (max-width: 992px) {
+
+	.custom-sidebar {
+
+		padding-left: 15px;
+		border-left: 0;
+		
+	}
+
+	.header-calendar-search-wrapper {
+
+		.calendar-search-btn-wrapper {
+
+			.calendar-btn-group {
+
+				width: 100%;
+
+				a {
+
+					width: 50%;
+					padding: 6px !important;
+					font-size: 10px;
+					line-height: 12px;
+
+					&:first-child {
+
+						margin-right: 10px;
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and down) */
+@media screen and (max-width: 1200px) {
+
+}
+
+@media print {
+
+    .header, .textwidget, .custom-sidebar, .social-share, .post-authors-wrapper, .post-comment, .section-title, .single-more-stories, .widget-area, .col-md-4  {
+
+        display: none;
+    }
+
+     body {
+
+        * {
+
+            visibility: hidden;    
+        }
+        
+    }
+
+    article {
+
+        * {
+
+            visibility: visible;    
+        }
+        
+    }  
+    
+}

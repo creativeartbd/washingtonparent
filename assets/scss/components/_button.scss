@@ -1,0 +1,96 @@
+.common-btn {
+
+	cursor: pointer;
+	border: 1px solid $secondary;
+	background: #fff;
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	font-family: $basefont;
+	letter-spacing: 1.8px;
+	color: $skyblue;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 15px;
+
+	&:hover {
+		background-color: $secondary;
+		color: $white;
+	}
+}
+
+.load-more-post-btn-wrapper {
+
+	.common-btn {
+
+		padding: 10px 90px;
+	}
+}
+
+button {
+
+	display: inline-block;
+	background: $lightgreen;
+	border: 0;
+	border-radius: 0;
+	color: #fff;
+	transition: 0.3s;
+
+	&:hover, &:focus, &:active {
+
+		color: #fff;
+		background: $button_hover;
+		box-shadow: none;
+	}
+}
+
+input[type="submit"], input[type="button"] {
+
+	display: inline-block;
+	background: $lightgreen;
+	border: 0;
+	border-radius: 0;
+	color: #fff;
+	transition: 0.3s;
+	font-weight: 600;
+
+	&:hover, &:focus, &:active {
+
+		color: #fff;
+		background: $button_hover;
+		box-shadow: none;
+	}
+}
+
+input[type="text"], textarea {
+
+	border-radius: 0;
+
+	&::placeholder {
+
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0px;
+		color: #B5B5B5;
+	}
+
+	&:hover, &:focus, &:active {
+
+		box-shadow: none;
+	}
+}
+
+.btn:not(:disabled):not(.disabled) {
+
+	box-shadow: none;
+}
+
+
+.form-control {
+
+	&:focus {
+
+		color: #b5b5b5;
+	}
+}

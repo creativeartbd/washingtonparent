@@ -1,0 +1,39 @@
+.custom-sidebar {	
+	
+	flex: inherit;
+	border-left: 0.5px solid #000;
+	padding-left: 58px;
+    width: 360px; 
+}
+
+.sidebar-newsletter-wrapper {
+
+	margin-bottom: 34px;
+
+	p, a {
+		
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 30px;
+		letter-spacing: 1.8px;
+		text-transform: uppercase;		
+		margin-bottom: 0;
+		color: #000; 
+		&:hover {
+			color: $primary;
+		}
+	}
+
+	p {
+		
+		border-bottom: 1px solid #000;
+	}
+
+	a {
+
+		text-decoration: none;
+		&:hover {
+			color: $primary;
+		}
+	}
+}

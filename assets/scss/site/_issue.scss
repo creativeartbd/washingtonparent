@@ -1,0 +1,61 @@
+.issue-archive-wrapper {
+	.issue-archive-inner {
+		article {
+			position: relative;
+		}
+
+		.post-thumbnail {
+			height: 329px;
+			margin-bottom: 18px;
+			position: relative;
+			background-size: cover !important;
+			background-repeat: no-repeat !important;
+			background-position: center !important;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: rgba(0, 0, 0, 0.4);
+				transition: 0.4s ease-in-out;
+				opacity: 0;
+			}
+			&:hover::after {
+				opacity: 1;
+			}
+		}
+
+		.entry-header {
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+
+		.entry-title {
+			font-family: $basefont;
+			font-size: 20px;
+			font-weight: bold;
+			text-transform: uppercase;
+			a:hover {
+				color: $skyblue;
+			}
+		}
+		.btn-issue {
+			display: block;
+			border-radius: 0;
+			height: 36px;
+			line-height: 36px;
+			padding: 0;
+			margin: 0;
+			font-size: 12px;
+			letter-spacing: 1.8px;
+			color: $black;
+			border-color: $skyblue;
+			&:hover {
+				color: $white;
+				background: $skyblue;
+			}
+		}
+	}
+}

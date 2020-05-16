@@ -1,0 +1,97 @@
+.single-page {
+
+    .entry-header {
+
+        padding-bottom: 15px;
+        margin-bottom: 32px;
+
+        h2 {
+
+            font-size: 38px;
+            line-height: 30px;
+            letter-spacing: 1.14px;
+            color: $skyblue;
+            text-transform: uppercase;
+
+        }
+    }
+
+    .entry-content {
+
+        h2 {
+
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 600;
+        }
+    }
+}
+
+.back-issues {
+	.section-title h2.issue-title {
+		margin-top: 20px;
+	}
+
+    .issues-search {
+
+        padding-top: 23px;
+        margin: 0 auto;
+
+        .issue-select {
+
+            border-radius: 0;
+            border: 1px solid #82BC76;
+            width: 193px;
+            color: #b5b5b5;
+
+            &:focus, &:active {
+
+                box-shadow: none;
+            }
+
+            option {
+
+                font-size: 14px;
+                line-height: 17px;
+                color: #b5b5b5;
+
+            }
+
+        }
+
+        .issue-btn {
+
+            width: 193px;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;;
+            letter-spacing: 1.8px;
+            color: $skyblue;
+            text-transform: uppercase;
+            background-color: #fff;
+            border: 1px solid #82BC76;
+            padding: 11px 50px;
+
+            &:hover {
+
+                background-color: $secondary;
+                color: $white;
+            }
+
+        }
+
+    }
+
+}
+.category-content-area {
+	.category-list-grid {
+		margin-top: 25px;
+	}
+}
+
+.pagination li.page-item.active .page-link {
+	color: $black;
+}
+
